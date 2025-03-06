@@ -33,6 +33,11 @@
         margin: 0 auto;
         padding: 40px;
         color: #333;
+        /* Disable text selection */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
 
       .header {
@@ -133,6 +138,32 @@
         color: #333;
       }
     </style>
+    <script>
+      // Disable right-click
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert('Right-clicking is disabled on this confidential document.');
+        return false;
+      });
+      
+      // Disable keyboard shortcuts that could be used to copy content
+      document.addEventListener('keydown', function(e) {
+        // Disable Ctrl+C, Ctrl+P, Ctrl+S, Ctrl+Shift+I
+        if (
+          (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 80 || e.keyCode === 83)) ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73)
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      });
+      
+      // Additional security message on page load
+      window.addEventListener('load', function() {
+        console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
+        console.log('%cThis is a confidential document. Unauthorized copying or distribution is prohibited.', 'font-size: 16px;');
+      });
+    </script>
   </head>
   <body>
 
