@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /* Watermark (Bottom-Right) */
+      .watermark {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.8;
+        z-index: 1000;
+      }
+      .watermark img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 5px;
+      }
+      .watermark-text {
+        font-size: 12px;
+        color: #666;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #333;
+        padding-bottom: 20px;
+      }
+
+      .confidential {
+        color: #cc0000;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+
+      .header h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 28px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      h2 {
+        font-size: 24px;
+        color: #222;
+        border-bottom: 2px solid #666;
+        padding-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #444;
+        margin-top: 25px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .methodology-item {
+        background-color: #f8f8f8;
+        padding: 15px;
+        margin: 10px 0;
+        border-left: 4px solid #333;
+      }
+
+      .footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+      }
+      
+      .signature-section {
+        margin-top: 60px;
+        border-top: 1px dashed #ccc;
+        padding-top: 20px;
+      }
+      
+      .signature-line {
+        margin-top: 40px;
+        border-top: 1px solid #000;
+        width: 250px;
+        padding-top: 5px;
+        font-size: 14px;
+      }
+      
+      .evolution-section {
+        background-color: #f8f8f8;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+      
+      .evolution-phase {
+        margin-bottom: 20px;
+      }
+      
+      .evolution-phase h4 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Watermark: bottom-right -->
+    <div class="watermark">
+      <img src="Noetiq_Black.png" alt="Noetiq">
+      <div class="watermark-text" style="text-align: center;">
+        <div>Fashion Strategy</div>
+        <div>Market Insights</div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="confidential">CONFIDENTIAL BUSINESS OVERVIEW</div>
+      <h1>
+        <img 
+          src="Noetiq_Black.png" 
+          alt="Noetiq Logo" 
+          style="vertical-align: middle; width: 80px; margin-right: 10px;">
+        NOETIQ: SEE WHAT OTHERS DON'T
+      </h1>
+      <div style="margin-top: 10px; color: #666">March 2025</div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2>Who We Are</h2>
+      <p>
+        Noetiq is a fashion-focused market intelligence platform that goes beyond ordinary analytics. 
+        We blend industry expertise with advanced AI, enhanced by human sensitivity, to uncover 
+        insights that simply don't exist elsewhere in the market.
+      </p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2>Why We're Different</h2>
+      <p>
+        Our proprietary methods dive deep into product attributes (like silhouettes, fabrics, 
+        product details, trends and price architecture in a granularity no one else does), 
+        revealing white-space opportunities and untapped potential for fashion brands. We don't 
+        just present insights—we translate them into actionable strategies, tailored to each 
+        brand's specific needs, goals, and key objectives. Our insights and strategies align with 
+        their unique business priorities (whether increasing margin, scaling operations, introducing 
+        new categories, capturing market share, or elevating brand positioning) then dovetail with 
+        the market insights found among competitor landscape that drive real results.
+      </p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2>Our USP</h2>
+      <ol>
+        <li>
+          <strong>Fashion-First Approach</strong> – Built by fashion and tech experts combined to merge 
+          the future of fashion, who understand the real drivers of brand growth.
+        </li>
+        <li>
+          <strong>AI + Human Expertise</strong> – Powerful automation plus expert curation for accurate, 
+          business-savvy insights. While we leverage AI technology, human expertise and connection remain 
+          the foundation of our business—this human element is what truly sets us apart.
+        </li>
+        <li>
+          <strong>Beyond Dashboards</strong> – We provide clear, data-driven recommendations that elevate 
+          your product lines and pricing strategies allowing you to see what others don't.
+        </li>
+      </ol>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <h2>Our Proprietary Methodologies</h2>
+      
+      <div class="methodology-item">
+        <h3>The Noetiq Fashion Intelligence Matrix™</h3>
+        <p>
+          A proprietary framework that evaluates brand positioning across multiple dimensions 
+          (price architecture, design attributes, market penetration).
+        </p>
+      </div>
+      
+      <div class="methodology-item">
+        <h3>Attribute Potential Score™</h3>
+        <p>
+          A unique scoring system that predicts which product attributes are likely to gain market share.
+        </p>
+      </div>
+      
+      <div class="methodology-item">
+        <h3>Collection Opportunity Mapping™</h3>
+        <p>
+          Our systematic approach to identifying untapped market opportunities that competitors have overlooked.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <h2>Business Model Evolution</h2>
+      
+      <div class="evolution-section">
+        <div class="evolution-phase">
+          <h4>Current: Project-Based Consulting</h4>
+          <p>
+            We're currently delivering custom reports and analyses on a project basis.
+          </p>
+        </div>
+        
+        <div class="evolution-phase">
+          <h4>Near Future: Subscription + Consulting</h4>
+          <ul>
+            <li>Base subscription to the Noetiq platform with standard reports</li>
+            <li>Premium tiers with more advanced features and custom reporting</li>
+            <li>Strategic advisory services as high-margin add-ons</li>
+          </ul>
+        </div>
+        
+        <div class="evolution-phase">
+          <h4>Long-Term: Enterprise Fashion Intelligence Suite</h4>
+          <ul>
+            <li>Enterprise licensing for larger fashion groups</li>
+            <li>API access for integration with client systems</li>
+            <li>White-labeled solutions for fashion consulting firms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature Section -->
+    <div class="signature-section">
+      <h2>Confidentiality Agreement</h2>
+      <p>
+        By signing below, I acknowledge that I have read this document and agree to keep all
+        information contained herein strictly confidential. I will not share, distribute, or discuss
+        any aspects of the Noetiq business, including its proprietary methodologies, business model,
+        or strategic plans with any third parties without explicit written permission.
+      </p>
+      
+      <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+        <div>
+          <div class="signature-line">Signature</div>
+        </div>
+        <div>
+          <div class="signature-line">Date</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      CONFIDENTIAL & PROPRIETARY | NOETIQ INTERNAL USE ONLY | © 2025
+    </div>
+
+  </body>
+</html>
